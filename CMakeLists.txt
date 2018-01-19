@@ -17,7 +17,7 @@ link_directories("/usr/local/lib" "/usr/lib" "/usr/local/Cellar/gcc/7.2.0/lib/gc
 link_libraries(flann gsl gslcblas rbc gomp)
 add_compile_options("-fopenmp")
 
-add_executable(my_knn_numa main.cpp main.h
+add_executable(main main.cpp main.h
         common.h
         flann_kdtree_index.h
         flann_kmeans_index.h

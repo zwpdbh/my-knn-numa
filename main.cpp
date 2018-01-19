@@ -11,6 +11,7 @@ inline void RECORD_PMC(){
 
 int main(int argc, char** argv) {
 	char* alg = argv[1];
+
 	if(strcmp(alg, "sdc") == 0){
 		IMG::ALG = 0;
 	}else if(strcmp(alg, "linear") == 0){

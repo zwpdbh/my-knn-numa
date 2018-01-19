@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.32/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4301.33/CLion.app/Contents/bin/cmake/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.32/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4301.33/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/zw/code/C_and_C++_Projects/my-knn-numa/cmake-build-deb
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.32/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4301.33/CLion.app/Contents/bin/cmake/bin/cmake" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4127.32/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4301.33/CLion.app/Contents/bin/cmake/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_knn_numa
+# Target rules for targets named main
 
 # Build rule for target.
-my_knn_numa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_knn_numa
-.PHONY : my_knn_numa
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-my_knn_numa/fast:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/build
-.PHONY : my_knn_numa/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 csv_parser.o: csv_parser.cpp.o
 
@@ -129,7 +129,7 @@ csv_parser.o: csv_parser.cpp.o
 
 # target to build an object file
 csv_parser.cpp.o:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/csv_parser.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/csv_parser.cpp.o
 .PHONY : csv_parser.cpp.o
 
 csv_parser.i: csv_parser.cpp.i
@@ -138,7 +138,7 @@ csv_parser.i: csv_parser.cpp.i
 
 # target to preprocess a source file
 csv_parser.cpp.i:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/csv_parser.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/csv_parser.cpp.i
 .PHONY : csv_parser.cpp.i
 
 csv_parser.s: csv_parser.cpp.s
@@ -147,7 +147,7 @@ csv_parser.s: csv_parser.cpp.s
 
 # target to generate assembly for a file
 csv_parser.cpp.s:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/csv_parser.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/csv_parser.cpp.s
 .PHONY : csv_parser.cpp.s
 
 main.o: main.cpp.o
@@ -156,7 +156,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +165,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 rbc_index.o: rbc_index.cpp.o
@@ -183,7 +183,7 @@ rbc_index.o: rbc_index.cpp.o
 
 # target to build an object file
 rbc_index.cpp.o:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/rbc_index.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/rbc_index.cpp.o
 .PHONY : rbc_index.cpp.o
 
 rbc_index.i: rbc_index.cpp.i
@@ -192,7 +192,7 @@ rbc_index.i: rbc_index.cpp.i
 
 # target to preprocess a source file
 rbc_index.cpp.i:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/rbc_index.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/rbc_index.cpp.i
 .PHONY : rbc_index.cpp.i
 
 rbc_index.s: rbc_index.cpp.s
@@ -201,7 +201,7 @@ rbc_index.s: rbc_index.cpp.s
 
 # target to generate assembly for a file
 rbc_index.cpp.s:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/rbc_index.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/rbc_index.cpp.s
 .PHONY : rbc_index.cpp.s
 
 sdc_index.o: sdc_index.cpp.o
@@ -210,7 +210,7 @@ sdc_index.o: sdc_index.cpp.o
 
 # target to build an object file
 sdc_index.cpp.o:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/sdc_index.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sdc_index.cpp.o
 .PHONY : sdc_index.cpp.o
 
 sdc_index.i: sdc_index.cpp.i
@@ -219,7 +219,7 @@ sdc_index.i: sdc_index.cpp.i
 
 # target to preprocess a source file
 sdc_index.cpp.i:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/sdc_index.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sdc_index.cpp.i
 .PHONY : sdc_index.cpp.i
 
 sdc_index.s: sdc_index.cpp.s
@@ -228,7 +228,7 @@ sdc_index.s: sdc_index.cpp.s
 
 # target to generate assembly for a file
 sdc_index.cpp.s:
-	$(MAKE) -f CMakeFiles/my_knn_numa.dir/build.make CMakeFiles/my_knn_numa.dir/sdc_index.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sdc_index.cpp.s
 .PHONY : sdc_index.cpp.s
 
 # Help Target
@@ -239,7 +239,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... my_knn_numa"
+	@echo "... main"
 	@echo "... csv_parser.o"
 	@echo "... csv_parser.i"
 	@echo "... csv_parser.s"

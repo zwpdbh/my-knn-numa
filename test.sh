@@ -62,6 +62,7 @@ echo
 echo RBC:
 $main rbc 7 8 16 0.3 0.7 ../features/%s ../features/X.csv
 
+
 echo
 echo "-------------------Digit:"
 echo
